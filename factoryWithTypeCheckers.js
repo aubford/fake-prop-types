@@ -12,7 +12,6 @@ var assign = require('object-assign');
 
 var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
 var has = require('./lib/has');
-var checkPropTypes = require('./checkPropTypes');
 
 var printWarning = function() {};
 
@@ -602,8 +601,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return propValue.constructor.name;
   }
 
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.checkPropTypes = function(){};
+  ReactPropTypes.resetWarningCache = function(){};
   ReactPropTypes.PropTypes = ReactPropTypes;
 
   return ReactPropTypes;
