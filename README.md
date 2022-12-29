@@ -1,6 +1,5 @@
 # fake-prop-types
 
-cp ./prop-types.js $PROJECT_DIRECTORY/node_modules/prop-types/
 
 # prop-types [![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine) [![Build Status](https://travis-ci.com/facebook/prop-types.svg?branch=main)](https://travis-ci.org/facebook/prop-types)
 
